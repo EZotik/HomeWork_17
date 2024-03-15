@@ -1,9 +1,11 @@
 package test;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.HeaderPage;
 import static io.qameta.allure.Allure.step;
 
+@Tag("header_simple")
 public class TestHeaderHomePage extends TestBase {
     HeaderPage headerPage = new HeaderPage();
 

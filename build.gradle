@@ -49,5 +49,9 @@ tasks.withType(Test) {
             exceptionFormat "short"
         }
     }
-
 }
+    task header_simple_test(type: Test) {
+        useJUnitPlatform {
+            includeTags("header_simple")
+        }
+    }
